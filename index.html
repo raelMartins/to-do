@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To Do</title>
+        <link rel="stylesheet" href="./bootstrap/bootstrap-4.4.1-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./css/fontawesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./27882-1-green-tick-free-download_16x16.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!--- Home Page-->
+        <div class="overlay"></div>
+        <!--- Title-->
+        <div class="title">
+            <h4>To<span style="color: #35992f;">Do</span></h4>
+        </div>
+        <div class="navbar">
+            <nav class="ml-auto">
+                <span>
+                    <button class="btn nav-item" onclick="openPage('HomePage', this)" id="defaultOpen">
+                        Home</button>
+                </span>
+                <span>
+                    <button class="btn nav-item" onclick="openPage('StatsPage', this)">Stats</button>
+                </span>
+            </nav>
+        </div>
+        <div id="HomePage" class="content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pl-3">
+                        <div id="myToDo" class="doing text-center">
+                            <input type="text" id="toDoItem" placeholder="Plans for the day?">
+                            <button id="addbtn" class="btn addbtn text-center"><i class="fas fa-angle-double-down"></i></button>
+                        </div>
+                        <div class="item-list">
+                            <ul id="toDoItemList">
+                                <!--
+                                <li>
+                                    Wake up
+                                    <span class="buttons">
+                                        <button class="remove">&times;</button>
+                                        <button class="complete">&RightArrow;</button>
+                                    </span>
+                                </li>
+                            -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item-list" id="completed">
+                        <h5 class="p-3" style="border-bottom: 2px solid#35992f;">
+                            Let's see what we did today</h5>
+                        <div>
+                            <ul id="accomplished">
+                                <!----
+                                <li>
+                                    Wake up
+                                    <span class="buttons">
+                                        <button class="remove">&times;</button>
+                                        <button class="complete">&LeftArrow;</button>
+                                    </span>
+                                </li>
+                                ----->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- End of home page-->
+        <!--- Stats Page-->
+        <div id="StatsPage" class="content">
+
+        </div>
+        <!--- End of Stats page-->
+        <!--- Javascript-->
+        <script src="js/main.js"></script>
+
+        <!-- <script src="js/script.js"></script> -->
+        <script>
+
+            // const openPage = (pageName,elmnt) => {
+            //     const content = document.getElementsByClassName(".content");
+            //     content.forEach(el => el.style.display = 'none');
+                
+            //     document.querySelector(`#${pageName}`).style.display = "block";
+            // }
+            // // Get the element with id="defaultOpen" and click on it
+            // document.querySelector("#defaultOpen").click();
+
+        </script>
+    </body>
+</html> 
