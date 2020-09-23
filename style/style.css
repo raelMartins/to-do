@@ -1,0 +1,224 @@
+
+body {
+    background: url('../img/bgimage.jpg') center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+.overlay {
+    background-color: rgb(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.title{
+    padding: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: relative;
+    right: 40px;
+    margin-bottom: 10px;
+}
+.nav-item {
+    color: white;
+    padding: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: white;
+    border-bottom:2px solid white;
+    border-radius: 0%;
+}
+ .nav-item:focus, .nav-item:active ,.nav-item.active {
+     color: #22b81f!important;
+     border-bottom: 2px solid #22b81f;
+     border-radius: 0%;
+     box-shadow: none;
+ }
+
+/****ToDo***/
+
+ .doing {
+     position: relative;
+     width: 100%;
+ }
+/*the input section*/
+
+input#toDoItem {
+    width: 75%;
+    max-width: 75%;
+    padding: 5px;
+    padding-right: 30px;
+    margin: 50px auto;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid grey;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.2);
+    outline: none;
+}
+input#toDoItem:focus {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-bottom: 3px solid white;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(255, 255, 255, 0.7);
+}
+input:-moz-placeholder {
+    color: rgb(255, 255, 255, 0.7);
+}
+input::-moz-placeholder {
+    color: rgb(255, 255, 255, 0.7);
+}
+input:-ms-input-placeholder {
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.addbtn {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 50;
+    color: white;
+    position: relative;
+    right: 42px;
+    bottom: 4px;
+}
+.addbtn:focus {
+    box-shadow: none;
+}
+.addbtn:hover, .addbtn:active {
+    color: #22b81f;
+    
+}
+/***** To do Item List*****/
+
+.item-list {
+    height: 50vh;
+    max-height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-image: url('./WebDevStickers/STK-20200126-WA0026.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    transition: background-image 0.5s;
+}
+
+.item-list li {
+    padding: 8px;
+    word-wrap: break-word;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    position: relative;
+    padding-right: 80px;
+    min-height: 40px;
+}
+
+.item-list li .buttons {
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.item-list li .buttons button {
+    width: 37.5px;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.0);
+    position: relative;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+.item-list li .buttons button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.item-list li .buttons button:last-of-type::before {
+    content: '';
+    width: 0.75px;
+    height: 70%;
+    max-height: auto;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    background-color: grey;
+    
+}
+
+
+.item-list li .buttons button.remove:hover, 
+.item-list li .buttons button.remove:active {
+    color: rgb(170, 29, 29);
+    
+}
+
+.item-list li .buttons button.complete:hover, 
+.item-list li .buttons button.complete:active {
+    color: #22b81f;
+
+}
+
+.item-list li .buttons button.redo:hover, 
+.item-list li .buttons button.redo:active {
+    color: #33b35e;
+}
+
+
+
+
+
+/**** Accomplished*****/
+
+.item-list#completed{
+    height: 65vh;
+    max-height: 65vh;
+    margin: 50px auto 16px;
+    width: 80%;
+    max-width: 80%;
+    background: rgb(0, 0, 0, 0.4);
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-image: url('./WebDevStickers/STK-20200126-WA0097.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    transition: background-image 0.5s;
+}
+/* 
+.item-list#completed li .buttons button.complete {
+    display: none;
+}
+
+.item-list#completed li .buttons button.remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
